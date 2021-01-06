@@ -1,5 +1,5 @@
 NVCCFLAGS 	:= -g --use_fast_math
-LIBS		:= -Xlinker -framework,GLUT -Xlinker -framework,OpenGL
+LIBS		:= -Xlinker -lglut -lOpenGL
 SRCS 		= $(wildcard *.cu)
 BINS 		= $(patsubst %.cu,%,$(SRCS))
 
